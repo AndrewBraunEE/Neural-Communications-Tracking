@@ -62,6 +62,7 @@ class QAM(Modulator)
 		for j in xrange(Points_Axis):
 			for i in xrange(Points_Axis):
 				self.constellation_points.append(self.grid[i][j])
+		
 
 		print("Constellation_Points: " + str(self.constellation_points))
 		self.constellation_meanings = self.gen_bits(Points_Axis**2)
